@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-i18n';
+
+  showDialogMessage = false;
+
+  dialogMessage = 'Mensagem escrita no controller para apresentar ao usuário.';
+
+  showMessage(): void {
+    this.showDialogMessage = true;
+  }
+
+  closeMessage(): void {
+    this.showDialogMessage = false;
+  }
+
 }
