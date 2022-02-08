@@ -1,16 +1,17 @@
 <div class="principal">
-  <h1>Texto Um</h1>
-  <h2>Texto Dois</h2>
-  <h3>Texto Três</h3>
-  <h4>Texto Quatro</h4>
+  <h1 i18n="@@textUm">Texto Um</h1>
+  <h2 i18n="@@textDois">Texto Dois</h2>
+  <h3 i18n="@@textTres">Texto Três</h3>
+  <h4 i18n="@@textQuatro">Texto Quatro</h4>
 
-  <button pButton label="Clique aqui!" (click)="showMessage()"></button>
+  <button pButton label="Clique aqui!" i18n-label="@@cliqueAqui!" (click)="showMessage()"></button>
 
   <p-dialog [(visible)]="showDialogMessage"
-            header="Mensagem do sistema">
+            header="Mensagem do sistema"
+            i18n-header="@@mensagemDoSistema">
     {{ dialogMessage }}
     <ng-template pTemplate="footer">
-      <button pButton type="button" label="OK" (click)="closeMessage()"></button>
+      <button pButton type="button" label="OK" i18n-label="@@OK" (click)="closeMessage()"></button>
     </ng-template>
   </p-dialog>
 </div>

@@ -31,6 +31,13 @@
           "strict": true
         }
       },
+      "i18n": {
+        "sourceLocale": "pt-BR",
+        "locales": {
+          "pt": "src/locale/messages.xlf",
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -77,6 +84,12 @@
               ],
               "outputHashing": "all"
             },
+            "pt": {
+              "localize": ["pt"]
+            },
+            "en": {
+              "localize": ["en"]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -96,6 +109,12 @@
             },
             "development": {
               "browserTarget": "angular-i18n:build:development"
+            },
+            "pt": {
+              "browserTarget": "angular-i18n:build:pt"
+            },
+            "en": {
+              "browserTarget": "angular-i18n:build:en"
             }
           },
           "defaultConfiguration": "development"
