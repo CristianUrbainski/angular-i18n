@@ -9,7 +9,7 @@ export class AppComponent {
 
   showDialogMessage = false;
 
-  dialogMessage = 'Mensagem escrita no controller para apresentar ao usuário.';
+  dialogMessage = $localize`:@@mensagemEscritaNoControllerParaApresentarAoUsuario:Mensagem escrita no controller para apresentar ao usuário.`;
 
   showMessage(): void {
     this.showDialogMessage = true;
